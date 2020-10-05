@@ -1,19 +1,19 @@
 <resources>
-    <string name="app_name">My Application</string>
-    <string name="perm">Perm</string>
+    <string name="app_name">Погода</string>
+    <string name="perm">Пермь</string>
     <string name="temer_main">20° C</string>
-    <string name="morning">Morning</string>
-    <string name="day">Day</string>
-    <string name="evening">Evening</string>
-    <string name="night">Night</string>
+    <string name="morning">Утро</string>
+    <string name="day">День</string>
+    <string name="evening">Вечер</string>
+    <string name="night">Ночь</string>
     <string name="temper_morning">15° C</string>
     <string name="temper_evening">18° C</string>
     <string name="temper_night">13° C</string>
     <string name="temper_day">23° C</string>
-    <string name="monday">Monday</string>
+    <string name="monday">Понедельник</string>
     <string name="monday_temper">18° C</string>
-    <string name="tuesday">Tuesday</string>
+    <string name="tuesday">Вторник</string>
     <string name="tuesday_temper">25° C</string>
-    <string name="wednesday">Wednesday</string>
+    <string name="wednesday">Среда</string>
     <string name="wensday_temper">23° C</string>
 </resources>
