@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroundv"
+    android:background="@drawable/nature"
     android:backgroundTint="#CC4B9CDC"
     android:backgroundTintMode="src_over"
     tools:context=".MainActivity">
@@ -286,5 +286,17 @@
         app:layout_constraintStart_toEndOf="@+id/textView17"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
         app:srcCompat="@drawable/cloudy" />
+
+    <ImageView
+        android:id="@+id/searchiv"
+        android:layout_width="49dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:foregroundGravity="top|right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
