@@ -4,24 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroundv"
+    android:background="@drawable/nature"
     android:backgroundTint="#CC4B9CDC"
     android:backgroundTintMode="src_over"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/locationshowtv"
         android:layout_width="130dp"
         android:layout_height="37dp"
         android:layout_marginTop="10dp"
         android:fontFamily="casual"
         android:includeFontPadding="false"
-        android:text="@string/perm"
+        android:hint="@string/perm"
         android:textAlignment="center"
         android:textColor="@color/textcolor"
         android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
         app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -29,7 +30,7 @@
         android:id="@+id/textView2"
         android:layout_width="50dp"
         android:layout_height="45dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="casual"
         android:text="@string/temer_main"
         android:textAlignment="center"
@@ -37,19 +38,18 @@
         android:textSize="30sp"
         app:layout_constraintEnd_toStartOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintStart_toEndOf="@+id/locationshowtv"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="54dp"
         android:layout_height="46dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/cloudy" />
 
     <TextView
@@ -286,5 +286,17 @@
         app:layout_constraintStart_toEndOf="@+id/textView17"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
         app:srcCompat="@drawable/cloudy" />
+
+    <ImageView
+        android:id="@+id/searchiv"
+        android:layout_width="49dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:foregroundGravity="top|right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
