@@ -29,8 +29,6 @@ public class MainActivity extends AppCompatActivity implements Constants {
                 startActivityForResult(intent, REQUEST_CODE);
             }
         });
-
-
     }
 
     @Override
@@ -43,7 +41,6 @@ public class MainActivity extends AppCompatActivity implements Constants {
             TextView location = findViewById(R.id.locationshowtv);
             location.setText(data.getStringExtra(LOCATION));
         }
-
     }
 
     @Override
@@ -58,6 +55,7 @@ public class MainActivity extends AppCompatActivity implements Constants {
 
         Log.d("MainActivity", "onRestoreInstanceState");
     }
+
 
     @Override
     protected void onResume() {
