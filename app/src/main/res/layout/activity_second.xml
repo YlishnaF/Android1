@@ -64,5 +64,11 @@
         android:hint="@string/location"
         android:autofillHints="@string/location"/>
 
+    <Button
+        android:id="@+id/oklocationbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:text="Ok" />
+
 </LinearLayout>
 
