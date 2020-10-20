@@ -24,6 +24,7 @@ public class ChooseLocationFragment extends Fragment {
     public static final String CURRENT_CITY = "CurrentCity";
     boolean isExistingWeather;
     Parcel currenrParcel;
+
     RadioButton rbCapital;
     RadioButton rbHome;
     EditText etLocation;
@@ -53,11 +54,12 @@ public class ChooseLocationFragment extends Fragment {
         isExistingWeather = getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE;
 
         if(savedInstanceState != null){
-            currenrParcel = (Parcel)savedInstanceState.getSerializable(CURRENT_CITY);
+           currenrParcel = (Parcel)savedInstanceState.getSerializable(CURRENT_CITY);
         } else {
             currenrParcel = new Parcel(getResources().getStringArray(R.array.cities)[0], 0, getResources().getStringArray(R.array.temperature)[0]);
         }
         if(isExistingWeather){
+
             showWeather(currenrParcel);
         }
     }
@@ -80,6 +82,7 @@ public class ChooseLocationFragment extends Fragment {
                 @Override
                 public void onClick(View v) {
                     currenrParcel = new Parcel(getResources().getStringArray(R.array.cities)[fi], fi, getResources().getStringArray(R.array.temperature)[fi]);
+                    showWeather(currenrParcel);
                 }
             });
 

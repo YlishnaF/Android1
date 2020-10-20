@@ -5,8 +5,8 @@
     android:orientation="horizontal">
 
     <fragment
-        android:id="@+id/chooseLock"
         android:name="com.example.myapplication.ChooseLocationFragment"
+        android:id="@+id/chooseLock"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1" />
