@@ -104,9 +104,11 @@ public class ChooseLocationFragment extends Fragment {
 
 
         } else{
-            Intent intent = new Intent(getContext(), WeatherDetailsFragment.class);
-            intent.putExtra(WeatherDetailsFragment.PARCEL, parcel);
-            startActivity(intent);
+            getFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.fragment_container, WeatherDetailsFragment.create(parcel))
+                    .addToBackStack(null)
+                    .commit();
         }
 
     }

@@ -5,8 +5,8 @@
     android:orientation="horizontal">
 
     <fragment
-        android:name="com.example.myapplication.ChooseLocationFragment"
         android:id="@+id/chooseLock"
+        android:name="com.example.myapplication.ChooseLocationFragment"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1" />
@@ -15,7 +15,7 @@
         android:id="@+id/weatherDet"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="1"/>
+        android:layout_weight="1" />
 
 </LinearLayout>
 
