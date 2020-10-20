@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="cities">
-        <item> Москва</item>
-        <item> Пермь </item>
-        <item> Шерегеш</item>
+        <item> Moscow</item>
+        <item> Perm </item>
+        <item> London</item>
     </string-array>
 
     <string-array name="temperature">

@@ -40,7 +40,8 @@ public class WeatherDetailsFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
+        
+        TextView city = view.findViewById(R.id.cityTV);
         ImageView weather = view.findViewById(R.id.imageViewWeather);
         TextView temperature = view.findViewById(R.id.temperatureTV);
 
@@ -49,5 +50,6 @@ public class WeatherDetailsFragment extends Fragment {
 
         weather.setImageResource(imgs.getResourceId(parcel.getImageIndex(), -1));
         temperature.setText(parcel.getTemperature());
+        city.setText(parcel.getCity());
     }
 }
