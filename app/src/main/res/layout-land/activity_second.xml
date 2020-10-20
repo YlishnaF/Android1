@@ -1,75 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/cityh"
-    android:backgroundTint="@color/background"
-    android:backgroundTintMode="src_over"
-    android:orientation="vertical"
-    android:padding="8dp"
-    tools:context=".SecondActivity">
+    android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="casual"
-        android:text="@string/favourites"
-        android:textAlignment="center"
-        android:textColor="@color/textcolor"
-        android:textSize="18sp" />
+    <fragment
+        android:name="com.example.myapplication.ChooseLocationFragment"
+        android:id="@+id/chooseLock"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
 
     <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <RadioButton
-                android:id="@+id/capitalrdt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="casual"
-                android:text="@string/capital"
-                android:textColor="@color/textcolor"
-                android:textColorLink="@color/colorPrimaryDark" />
-
-            <RadioButton
-                android:id="@+id/homerbt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="casual"
-                android:text="@string/home"
-                android:textColor="@color/textcolor"
-                android:textColorLink="@color/colorAccent" />
-        </RadioGroup>
-
-    </FrameLayout>
-
-    <EditText
-        android:id="@+id/editTextLocation"
-        android:layout_width="match_parent"
-        android:layout_height="67dp"
-        android:autofillHints="@string/location"
-        android:ems="10"
-        android:fontFamily="casual"
-        android:hint="@string/location"
-        android:inputType="textPersonName"
-        android:textColor="@color/textcolor"
-        android:textColorHighlight="@color/textcolor"
-        android:textColorLink="@color/textcolor" />
-
-    <Button
-        android:id="@+id/oklocationbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="36dp"
-        android:text="Ok" />
-
+        android:id="@+id/weatherDet"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
 
 </LinearLayout>
 

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cities">
+        <item> Moscow</item>
+        <item> Perm </item>
+        <item> London</item>
+    </string-array>
+
+    <string-array name="temperature">
+        <item> 23°C</item>
+        <item> 25°C</item>
+        <item> 18°C</item>
+    </string-array>
+
+    <integer-array name="weather">
+        <item>@drawable/cloudy</item>
+        <item>@drawable/sun</item>
+        <item>@drawable/rain</item>
+    </integer-array>
+</resources>

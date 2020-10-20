@@ -6,12 +6,9 @@ public final class MainPresentor {
     private String location = "Location";
     private MainPresentor(){
     }
-
     public String getLocation(){
         return location;
     }
-
-
     public static MainPresentor getInstance(){
         return instance;
     }
