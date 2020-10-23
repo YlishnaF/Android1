@@ -3,12 +3,15 @@ package com.example.myapplication;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements Constants {
@@ -20,6 +23,10 @@ public class MainActivity extends AppCompatActivity implements Constants {
         super.onCreate(savedInstanceState);
         Log.d("MainActivity", "onCreate");
         setContentView(R.layout.activity_main);
+        SocSource sourceData = new SocSource(getResources());
+        initRecyclerView(sourceData.build());
+        SocSourceWeek socSourceWeek = new SocSourceWeek(getResources());
+        initRecyclerViewWeek(socSourceWeek.build());
 
         ivSearch = findViewById(R.id.searchiv);
         ivSearch.setOnClickListener(new View.OnClickListener() {
@@ -30,6 +37,23 @@ public class MainActivity extends AppCompatActivity implements Constants {
             }
         });
     }
+    private void initRecyclerView(SocSource socSource){
+        RecyclerView recyclerView = findViewById(R.id.recyclerv_whetaher_day);
+        LinearLayoutManager layoutManager =new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false);
+        recyclerView.setLayoutManager(layoutManager);
+        SocnetAdapter adapter = new SocnetAdapter(socSource);
+        recyclerView.setAdapter(adapter);
+
+    }
+    private void initRecyclerViewWeek(SocSourceWeek socSourceWeek){
+        RecyclerView recyclerView = findViewById(R.id.week);
+        LinearLayoutManager layoutManager =new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(layoutManager);
+        SocnetAdapterWeek adapter = new SocnetAdapterWeek(socSourceWeek);
+        recyclerView.setAdapter(adapter);
+
+    }
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
