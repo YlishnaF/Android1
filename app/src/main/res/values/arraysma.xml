@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="time">
+        <item>Night</item>
+        <item>Morning</item>
+        <item>Day</item>
+        <item>Evening</item>
+    </string-array>
+
+    <string-array name="temperaturema">
+        <item> 15°C</item>
+        <item> 23°C</item>
+        <item> 25°C</item>
+        <item> 18°C</item>
+    </string-array>
+
+    <integer-array name="picture">
+        <item>@drawable/rain</item>
+        <item>@drawable/cloudy</item>
+        <item>@drawable/sun</item>
+        <item>@drawable/cloudy</item>
+    </integer-array>
+</resources>
