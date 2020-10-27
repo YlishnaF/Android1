@@ -14,15 +14,14 @@
         android:layout_height="50dp">
 
         <TextView
+            style="@style/MyTextStyle"
             android:id="@+id/day_week"
             android:layout_width="50dp"
             android:layout_height="30dp"
             android:layout_marginTop="15dp"
             android:layout_weight="1"
-            android:fontFamily="casual"
             android:text="TextView"
-            android:textAlignment="center"
-            android:textColor="@color/textcolor" />
+            android:textAlignment="center" />
 
         <ImageView
             android:id="@+id/picture_week"
@@ -33,14 +32,13 @@
             app:srcCompat="@drawable/cloudy" />
 
         <TextView
+            style="@style/MyTextStyle"
             android:id="@+id/weather_week"
             android:layout_width="50dp"
             android:layout_height="30dp"
             android:layout_marginTop="15dp"
             android:layout_weight="1"
-            android:fontFamily="casual"
             android:text="TextView"
-            android:textAlignment="center"
-            android:textColor="@color/textcolor" />
+            android:textAlignment="center" />
     </LinearLayout>
 </androidx.cardview.widget.CardView>

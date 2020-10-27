@@ -14,8 +14,11 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.google.android.material.snackbar.Snackbar;
+
 public class MainActivity extends AppCompatActivity implements Constants {
     ImageView ivSearch;
+    TextView locShow;
 
 
     @Override
@@ -34,6 +37,24 @@ public class MainActivity extends AppCompatActivity implements Constants {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(),SecondActivity.class);
                 startActivityForResult(intent, REQUEST_CODE);
+            }
+        });
+
+        locShow = findViewById(R.id.locationshowtv);
+        locShow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Snackbar.make(v, "Location is empty", Snackbar.LENGTH_LONG)
+                        .setAction("location", new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                Intent intent = new Intent(getApplicationContext(), SecondActivity.class);
+                                startActivityForResult(intent, REQUEST_CODE);
+
+                            }
+                        }).show();
+
             }
         });
     }
