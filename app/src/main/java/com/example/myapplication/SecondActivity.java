@@ -13,7 +13,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 
+import com.google.android.material.textfield.TextInputEditText;
+
 public class SecondActivity extends AppCompatActivity implements Constants {
+    TextInputEditText locTv;
+    Button btnOK;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,15 +25,14 @@ public class SecondActivity extends AppCompatActivity implements Constants {
         setContentView(R.layout.activity_second);
         final MainPresentor presentor = MainPresentor.getInstance();
 
-        Button ok = findViewById(R.id.oklocationbtn);
-//        EditText et = findViewById(R.id.editTextLocation);
-//        et.setText(String.valueOf(presentor.getLocation()));
+        btnOK = findViewById(R.id.oklocationbtn);
+        locTv = findViewById(R.id.location_et);
 
-//        ok.setOnClickListener(new View.OnClickListener() {
+//        btnOK.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
 //                Intent intentResult = new Intent();
-//                intentResult.putExtra(LOCATION, et.getText().toString());
+//                intentResult.putExtra(LOCATION, locTv.getText().toString());
 //                setResult(RESULT_OK,intentResult);
 //                finish();
 //            }
@@ -43,5 +46,6 @@ public class SecondActivity extends AppCompatActivity implements Constants {
         }
 
     }
+
 
 }

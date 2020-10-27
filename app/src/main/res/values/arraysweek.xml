@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="day_week">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+    <string-array name="temperature_week">
+        <item> 15°C</item>
+        <item> 23°C</item>
+        <item> 25°C</item>
+        <item> 22°C</item>
+        <item> 24°C</item>
+        <item> 20°C</item>
+        <item> 18°C</item>
+    </string-array>
+
+    <integer-array name="picture_week">
+        <item>@drawable/rain</item>
+        <item>@drawable/cloudy</item>
+        <item>@drawable/sun</item>
+        <item>@drawable/cloudy</item>
+        <item>@drawable/sun</item>
+        <item>@drawable/rain</item>
+        <item>@drawable/rain</item>
+
+
+
+    </integer-array>
+</resources>

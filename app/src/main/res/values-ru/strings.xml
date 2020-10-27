@@ -21,4 +21,7 @@
     <string name="capital">Москва</string>
     <string name="home">Пермь</string>
     <string name="location">Место</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="location_et">Локация</string>
+    <string name="ok_btn">ОК</string>
 </resources>

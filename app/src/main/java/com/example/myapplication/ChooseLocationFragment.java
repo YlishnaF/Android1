@@ -19,27 +19,29 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
+import com.google.android.material.textfield.TextInputEditText;
+
 
 public class ChooseLocationFragment extends Fragment {
     public static final String CURRENT_CITY = "CurrentCity";
     boolean isExistingWeather;
     Parcel currenrParcel;
+    TextInputEditText tv;
 
-    RadioButton rbCapital;
-    RadioButton rbHome;
-    EditText etLocation;
-    Button okbtn;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         return inflater.inflate(R.layout.fragment_choose_location, container, false);
+
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
        initList(view);
+
     }
 
     @Override
